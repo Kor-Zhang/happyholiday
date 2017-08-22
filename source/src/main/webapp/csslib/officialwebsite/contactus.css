@@ -1,0 +1,68 @@
+
+* {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: black;
+	font-family: "Microsoft YaHei";
+	margin:0px 0px;
+	padding: 0px 0px;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow-x:hidden; 
+}
+
+/***********************************导航栏********************************/
+#officialwebsite_contactus_nav{
+	
+	height:100px;
+	width:100%;
+}
+/***********************************联系区域********************************/
+#officialwebsite_contactus_displayArea{
+	margin-top:45px;
+	width:80%;
+	margin-left: 10%;
+	
+}
+
+#officialwebsite_contactus_displayArea_sendmsg{
+	margin-top:35px;
+}
+#officialwebsite_contactus_displayArea_sendmsg_table{
+	width:100%;
+	height:100%;
+}
+
+#officialwebsite_contactus_displayArea_sendmsg_table input,#officialwebsite_contactus_displayArea_sendmsg_table textarea{
+	background:rgb(241,239,239);
+	display:inline-block;
+	width:35%;
+	height:25px;
+	margin-top: 20px;
+	border: 1px solid rgb(200,200,200);
+	border-radius:2px;
+}
+#officialwebsite_contactus_displayArea_sendmsg_table textarea{
+	
+	width:80%;
+	height:300px;
+}
+#officialwebsite_contactus_displayArea_sendmsg_table input[type="button"]{
+	cursor:pointer;
+	width:20%;
+}
+#officialwebsite_contactus_displayArea_sendmsg_table input:hover,#officialwebsite_contactus_displayArea_sendmsg_table textarea:hover{
+	
+	box-shadow: 0px 0px 2px rgb(150,150,150);
+}
+#officialwebsite_contactus_displayArea_sendmsg_table td{
+}
+#officialwebsite_contactus_displayArea_font>*{
+	margin-top: 25px;
+}
+/*********************************底部********************************/
+#officialwebsite_contactus_bottom{
+	margin-top: 45px;	
+}

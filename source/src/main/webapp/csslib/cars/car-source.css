@@ -1,0 +1,479 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+a{
+	color:gray;
+}
+.cartxt {
+	font-size: 12px;
+	margin-left: 20px;
+	text-overflow:ellipsis;
+	word-break:keep-all; 
+	white-space:nowrap;
+}
+.choose-ul {
+    float: left;
+    width: 1035px;
+    margin-bottom: 15px;
+}
+.source-bar {
+	padding: 1px 14px;
+	float: left;
+	background-color: white;
+	line-height: 35px;
+	border: 1px solid #e9ebee;
+}
+.swith-div {
+	line-height: 40px;
+}
+.city-input {
+	width: 140px;
+}
+.from-store-input {
+	width: 200px;
+}
+.from-date-input {
+	width: 220px;
+}
+.car-time-input {
+	width: 130px;
+}
+.search {
+	float: right;
+}
+i {
+    color: #939a9f;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    display: block;
+    font-style: normal;
+    text-align: center;
+}
+.take-car-box {
+	color: #93939e;
+}
+.c_car,.c_date {
+	color: black;
+	font-weight: 500;
+}
+.white-backgorund {
+	background-color: white;
+	color: #93939E;
+}
+.firstInfo {
+	margin-bottom: 10px;
+	height: 60px;
+}
+.car-type {
+	line-height: 42px;
+	font-size: 14px;
+	color: #60606c;
+	padding-left: 15px;
+}
+
+.chexing {
+	overflow: hidden;
+	padding: 10px 0 11px;
+}
+.chexing li{
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+.chexing li {
+    width: 83px;
+    height: 60px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+}
+.chexing li a:hover {
+	text-decoration: none;
+	color: #FABE00;
+}
+.car-type-img {
+	display: inline-block;
+	margin-left: 20px;
+	height: 20px;
+	width: 45px;
+	
+}
+.car-img {
+	background: url(../../img/car/zc_clicon.png);
+}
+.car-type-div {
+	border-bottom: 1px solid #e7e8e9;
+}
+.price-range {
+    width: 240px;
+    margin: 5px auto 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.price-range ul {
+	list-style: none;
+}
+.price-range li {
+    display: inline-block;
+    float: left;
+    margin-right: 2px;
+}
+.price-range li a span {
+	display: inline-block;
+   	background-color: #e9ebee;/**选中后颜色：#FABE00*/
+   	height: 5px;
+   	margin: 5px 0;
+}
+.price-range .checked span {
+	background-color: #FABE00;
+}
+.checked {
+	color: #FABE00;
+}
+.checked a{
+	color: #FABE00;
+}
+.w40 {
+	width: 40px;
+}
+.w70 {
+	width: 70px;
+}
+.price-num {
+    width: 240px;
+    margin: -2px auto 0;
+    padding-bottom: 12px;
+    overflow: hidden;
+}
+.price-num li {
+    display: inline-block;
+    float: left;
+    font-size: 12px;
+    line-height: 24px;
+}
+.price-div {
+	color: #93939e;
+	border-bottom: 1px solid #e7e8e9;
+}
+.car-brand {
+	overflow: hidden;
+    padding: 5px 14px 12px;
+    
+}
+.car-brand li {
+	cursor: pointer;
+    float: left;
+    width: 55px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #93939e;
+}
+.car-brand a:hover {
+	text-decoration: none;
+	color: #FABE00;
+}
+.car-left {
+	margin-right: 20px;
+	width: 270px;
+	float: left;
+}
+.car-right{
+	float: left;
+}
+.right-tab {
+    height: 47px;
+    line-height: 48px;
+    text-align: center;
+    background-color: #f8f8fa;
+    border-bottom: 1px solid #e9ebee;
+}
+.right-tab ul {
+	list-style: none;
+}
+.right-tab li.tab {
+    float: left;
+    border-right: 1px solid #e9ebee;
+    color: #2f2f39;
+    font-size: 16px;
+    padding-right: 0;
+    cursor: pointer;
+}
+.right-tab li i {
+    font-style: normal;
+    font-size: 12px;
+    color: #93939e;
+    display: inline-block;
+    margin-left: 3px;
+}
+.right-tab li a {
+    text-decoration: none;
+    color: #60606c;
+	display: block;
+}
+.w120 {
+	width: 120px;
+}
+.w140 {
+	width: 140px;
+}
+.right-tab li.tab.day-active {
+    background: #fff;
+    height: 46px;
+    line-height: 44px;
+    border-top: 2px solid #fabe00;
+}
+.car-list {
+	background-color: #fff;
+}
+.car-picture {
+    padding: 25px 0 25px 30px;
+    width: 230px;
+    border-bottom: 1px solid #e4e6e9;
+}
+.car-info {
+    width: 302px;
+    padding: 20px;
+    padding-right: 0;
+    border-bottom: 1px solid #e4e6e9;
+}
+.car-info .name {
+    font-size: 18px;
+    color: #60606c;
+    line-height: 26px;
+}
+.info .other {
+    font-size: 12px;
+    line-height: 24px;
+}
+.car-info .car-tips {
+    margin-top: 12px;
+    font-size: 0;
+}
+.tip {
+    width: 48px;
+    height: 18px;
+    font-style: normal;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    line-height: 20px;
+}
+.order {
+    width: 320px;
+    padding: 30px 20px 30px 0;
+    border-bottom: 1px solid #e4e6e9;
+}
+.order-box {
+    width: 320px;
+    height: 50px;
+    float: right;
+    margin-bottom: 12px;
+}
+.order-box .order-price {
+    float: left;
+}
+.car-price {
+    width: 160px;
+}
+.oder-price .car-price {
+    height: 50px;
+    width: 136px;
+    float: left;
+    position: relative;
+    left: 15px;
+}
+.total .rmb {
+    display: inline-block;
+    font-size: 24px;
+    color: #ff8650;
+    font-style: normal;
+    line-height: 30px;
+}
+.total .num {
+    display: inline-block;
+    font-size: 30px;
+    color: #ff8650;
+    font-style: normal;
+    line-height: 30px;
+}
+.total .unit {
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    margin-top: 12px;
+}
+.price-all {
+    margin: 4px 0 0;
+}
+.no-account-total {
+	font-size: 12px;
+}
+.price-all em {
+    font-style: normal;
+    display: inline-block;
+    line-height: 16px;
+    float: left;
+}
+.price-all .save {
+    font-size: 12px;
+}
+.price-all .save span {
+	display: inline-block;
+    font-style: normal;
+    color: #ff8650;
+    font-size: 14px;
+}
+.order-price .houfu {
+    float: left;
+    height: 50px;
+    width: 24px;
+    /* background: url(img/houfu.png) no-repeat center center; */
+}
+.spe_order {
+    float: right;
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.tip-o {
+    width: 20px;
+    height: 52px;
+    font-size: 11px;
+    color: #fff;
+    line-height: 12px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 1px;
+    padding-top: 2px;
+    background-color: #ff8650;
+    float: left;
+}
+.tip-incon {
+    width: 299px;
+    height: 50px;
+    margin-top: 1px;
+    float: left;
+    border: 1px solid red;
+    border-left: 0px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.tl em {
+    color: #ff8650;
+	font-style: normal;
+}
+.tl .rmb {
+	font-size: 24px;
+}
+.tl .num {
+	font-size: 30px;
+}
+.tl .unit {
+	font-size: 12px;
+}
+.tl {
+    float: left;
+    height: 48px;
+    margin-left: 15px;
+}
+.tr {
+    float: right;
+    height: 48px;
+    margin-right: 15px;
+}
+.tr .all {
+	font-style: normal;
+    font-size: 12px;
+    color: #93939e;
+    float: left;
+    line-height: 50px;
+}
+.tr .num {
+	font-style: normal;
+	font-size: 14px;
+	color: #ff5050;
+	float: left;
+}
+.unchecked,.checked {
+	/* float: left; */
+}
+
+.car-img-0{
+	background-position: 0px -14px;
+}
+.car-img-1{
+	background-position: -48px -14px;
+}
+.car-img-2{
+	background-position: -99px -14px;
+}
+.car-img-3{
+	background-position: -160px -14px;
+}
+.car-img-4{
+	background-position: -352px -14px;
+}
+.car-img-5{
+	background-position: -290px -14px;
+}
+.car-img-6{
+	background-position: -48px -14px;
+}
+.car-img-7{
+	background-position: -48px -14px;
+}.car-img-8{
+	background-position: 0px -14px;
+}
+.car-img-9{
+	background-position: -48px -14px;
+}
+.car-img-10{
+	background-position: -99px -14px;
+}
+.car-img-11{
+	background-position: -160px -14px;
+}
+.car-img-12{
+	background-position: -352px -14px;
+}
+.car-img-13{
+	background-position: -290px -14px;
+}
+.car-img-14{
+	background-position: -48px -14px;
+}
+.car-img-15{
+	background-position: -48px -14px;
+}
+.car-img-16{
+	background-position: 0px -14px;
+}
+.car-img-17{
+	background-position: -48px -14px;
+}
+.car-img-18{
+	background-position: -99px -14px;
+}
+.car-img-19{
+	background-position: -160px -14px;
+}
+.car-img-20{
+	background-position: -352px -14px;
+}
+.car-img-21{
+	background-position: -290px -14px;
+}
+.car-img-22{
+	background-position: -48px -14px;
+}
+.car-img-23{
+	background-position: -48px -14px;
+}

@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: microsoft yahei;
+    font-size:14px;
+}
+body{
+	background-color: rgb(242, 243, 245);
+}
+ul{
+	list-style: none;
+}
+p{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+/**闁搞儱澧芥晶鏍ㄦ姜椤旇姤灏�start**/
+.container{
+	width:1200px;
+	padding: 0px 0px;
+}
+/**闁搞儱澧芥晶鏍ㄦ姜椤旇姤灏�end****/
+/**闁规亽鍔忓畷姗�礌閿熻棄顕ｉ敓绛嬫綏***/
+.recommend{
+    width:auto;
+    height:460px;
+    min-width: 1200px;
+    margin-top:30px;
+}
+.recommend .recommend-content{
+    width:1200px;
+    height:460px;
+    margin:0 auto;
+}
+
+.recommend .recommend-content  ul li{
+    list-style: none;
+    float:left;
+}
+
+.recommend .recommend-content  .recommend-content-type ul{
+    height:40px;
+    border-bottom:3px solid  rgb(37, 119, 227);
+}
+.recommend .recommend-content  .recommend-content-type ul li{
+    width:100px;
+    height:30px;
+    font-size: 16px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.recommend .recommend-content  .recommend-content-type ul li:hover{
+    color:rgb(37, 119, 227);
+    text-decoration: none;
+}
+
+.recommend .recommend-content  .recommend-content-type ul .recommend-content-type-li-style{
+    color:rgb(37, 119, 227);
+}
+.recommend .recommend-content  .recommend-content-contents{
+    clear: both;
+}
+.recommend .recommend-content  .recommend-content-contents ul li{
+    width:1200px;
+    height:420px;
+    display:none;
+    background-color: white;
+}
+.recommend .recommend-content  .recommend-content-contents ul .li-show{
+    display:block;
+}
+
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail{
+    width:240px;
+    height:180px;
+    border:2px solid #efefef;
+    float:left;
+    margin-top:18px;
+    margin-left:43px;
+    position: relative;
+    overflow: hidden;
+}
+
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px #999;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail:hover .desc-index{
+    z-index:1;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail:hover .desc-index_{
+    z-index:2;
+    top:101px;
+    transition: .5s;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc{
+    width:240px;
+    height:60px;
+    position:absolute;
+    top:125px;
+    left:0;
+    background: #fff;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc-index{
+    z-index:2;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc-index_{
+    z-index:1;
+    transition: .5s;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc p{
+    margin-top:5px ;
+    margin-left:5px;
+    margin-bottom: 0px;
+  color: rgb(102, 102, 102);
+
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc span{
+    display: block;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc .buy-number{
+    color:#20516f;
+    float:left;
+    margin-left:10px;
+    margin-top: 5px;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc .price{
+    float:right;
+    margin-right:10px;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc .price a{
+    color: rgb(255, 102, 0);
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc .price a:hover{
+    text-decoration: none;
+}
+.recommend .recommend-content  .recommend-content-contents ul li .rencommend-hotsail-detail .desc .price .price-RMB{
+    font-size:20px;
+    margin-right: 3px;
+}
+/**闁规亽鍔忓畷姗�礌閿熺晫绱掗幘瀛樺皢**/
+/**闁告帒妫楃亸锟界紒澶屽枙濠у懎顕ｉ敓绛嬫綏**/
+.mod{
+	width:  auto;
+	margin-top: 20px;
+}
+.car .mod-bd{
+	border: 1px solid #e0e0e0;
+	border-top: none;
+   	background-color: white;
+}
+.car{
+	height: 260px;
+}
+
+.car .mod-hd{
+	height: 40px;
+	line-height: 40px;
+	border-bottom:3px solid  rgb(37, 119, 227);
+}
+.car .mod-hd span{
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.car .mod-hd .current{
+	color:rgb(37, 119, 227);
+}
+.mod .entrance{
+	float: left;
+	width:230px;
+	padding: 0 20px 15px;
+}
+.mod .entrance a{
+	font-size: 12px;
+	width: 187px;
+	height: 360px;
+	overflow: hidden;
+	color: rgb(102, 102, 102);
+}
+.mod .entrance a:hover{
+	color:rgb(37, 119, 227);
+	text-decoration: none;
+}
+.entrance dt{
+	padding: 4px 0 0 0;
+	font: 700 14px/34px "Microsoft yahei";
+}
+.entrance dd{
+	margin-left: -10px;
+	overflow: hidden;
+	position: relative;
+	text-overflow: ellipsis;
+}
+.entrance .entrance-item{
+	position: relative;
+float: left;
+display: block;
+padding: 0 10px;
+line-height: 18px;
+height: 18px;
+margin: 7px 0;
+}
+
+.mod .product{
+	position: relative;
+	padding: 15px 19px 0;
+	border-left: 1px dotted #a3a3a3;
+	overflow: hidden;
+}
+.mod .product .product-hd{
+	height: 20px;
+	width: 910px;
+	margin-bottom: 10px;
+}
+.inner-tabs-nav{
+	height: 20px;
+	margin-bottom: 10px;
+}
+.inner-tabs-nav li{
+	float: left;
+	display: inline-block;
+	line-height: 20px;
+	margin-right: 15px;
+	padding: 0 8px;
+}
+.inner-tabs-nav li.myActive,
+.inner-tabs-nav >li:hover,
+.inner-tabs-nav >li:hover>a{
+	background: #3983e5;
+	color: #fff;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.inner-tabs-nav li.myActive a{
+	color: #fff;
+cursor: default;
+}
+.link-more{
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	padding: 0 5px;
+}
+.link-more:hover{
+	border: 1px solid  #337ab7;
+	text-decoration: none;
+	border-radius: 2px;
+}
+.product-item{
+	position: relative;
+	width: 220px;
+	height: 160px;
+	float: left;
+	margin: 0 0 10px 10px;
+	overflow: hidden;
+	transition: all 0.2s linear 0s;
+}
+.product-item:hover, .product-item > a:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.product-item a{
+	text-decoration: none;
+	color: #666;
+}
+.item-img img:hover{
+    transform: scale(1.05);
+}
+.item-img img{
+	transition: transform 0.3s ease 0s;
+}
+.product-item .item-img{
+	position: relative;
+	width: 220px;
+	height: 110px;
+	margin-bottom: 3px;
+	overflow: hidden;
+}
+.product-item .item-name{
+	height: 16px;
+	line-height: 16px;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 5px;
+}
+.product-item .item-info{
+	position: relative;
+	height: 35px;
+	text-align: right;
+	padding: 0 5px;
+}
+.myPrice{
+	position: relative;
+	float: right;
+	font: 22px/1.5 tahoma;
+	color: #f60;
+}
+.myPrice dfn{
+	 	vertical-align: 7px;
+		font: 12px/1.5 arial;
+		color: #666;
+}
+.myPrice .myPrice-info{
+	margin-left: 3px;
+	vertical-align: 2px;
+	font: 12px/1.5 "Microsoft yahei";
+	color: #666
+}
+
+
+/*************景区推荐部分 负责的css*******************/
+.view .mod-bd{
+	border: 1px solid #e0e0e0;
+	border-top: none;
+   	background-color: white;
+}
+.view{
+	height: 260px;
+}
+
+.view .mod-hd{
+	height: 40px;
+	line-height: 40px;
+	border-bottom:3px solid  rgb(37, 119, 227);
+}
+.view .mod-hd span{
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.view .mod-hd .current{
+	color:rgb(37, 119, 227);
+}

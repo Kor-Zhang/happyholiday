@@ -1,0 +1,344 @@
+/*³õÊ¼»¯ÑùÊ½*/
+*{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 14px;
+/* 	-moz-box-sizing: content-box; */
+}
+.container .middle .search-box-btn{
+		height: 40px;
+}
+/*±³¾°ÑÕÉ«*/
+body{
+	background-color: rgb(242, 243, 245);
+}
+.container{
+	width: 1200px;
+	padding: 0px 0px;
+}
+.container::before{
+	display: table;
+	content: none;
+}
+.left_ct{
+	width:250px;
+	margin-top:10px;
+	margin-left:10px;
+	float: left;
+}
+.left_ct .panel{
+	margin-bottom: 0px;
+	border-style: none;
+	border-radius: 0px;
+}
+.left_ct hr{
+	margin-bottom: 0px;
+	margin-top:0px;
+}
+.left_ct .panel-heading{
+	background-color:white ;
+}
+
+.left_ct .list-group a{
+	color: rgb(147, 147, 158);
+}
+.left_ct .list-group li:hover{
+	 background-color: #fff8e8;
+     color: #fabe00;
+}
+.left_ct .list-group a:hover,
+.left_ct .list-group a:focus{
+	text-decoration: none;
+}
+.right_ct{
+	width:900px;
+	margin-top:10px;
+	float: left;
+	margin-left: 20px;
+}
+
+.myContent{
+	width:895px;
+	
+}
+.myContent_top{
+	background-color: white;
+}
+.myContent_header{
+	height: 60px;
+
+}
+.myContent_header h4{
+	position: absolute;
+	top:10px;
+	left:30px;
+}
+.myContent_header input{
+	border-radius: 0px;
+}
+.myContent_header input:focus{
+	  outline: none;  
+        border-color: orange;
+        border-radius: 0px;
+        box-shadow: 0 0 5px rgba(225, 134, 80, 0.4); 
+}
+.myContent_header #startTime{
+	width: 150px;
+	position: absolute;
+	left:470px;
+	top:10px;
+}
+.myContent_header #endTime{
+	width:150px;
+	position: absolute;
+	left:630px;
+	top:10px;
+}
+.myContent_header #modify{
+	width:80px;
+	position: absolute;
+	right: 30px;
+	top:10px;
+	border-radius: 2px;
+}
+
+.myContent_Status a:first-child{
+	margin-left: 30px;
+}
+.myContent_Status .btn-default{
+	width:100px;
+	background-color:rgb(248, 248, 250) ;
+	color:gray;
+	border-style: none;
+	border-radius: 0px;
+	
+}
+.myContent_Status .btn-default:hover{
+	background-color:orange ;
+	color: white;
+}
+.myContent_Order{
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	
+}
+
+.myContent_Tips{
+	background-color:white ;
+	margin-top:10px ;
+	
+}
+.myContent_Tips .panel-default{
+	border-style: none;
+}
+.myContent_Tips .panel-heading{
+	background-color:white ;
+}
+.myContent_Tips .tips li{
+
+	background-color:rgb(248, 248, 250) ;
+	line-height: 20px;
+	height: 80px;
+	list-style: none;
+	width:195px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+}
+.myContent_Tips .tips li p{
+	color: rgb(147, 147, 158);
+	font-size: 12px;
+}
+.s-green{
+	color: rgb(140, 193, 82);
+}
+.s-orange{
+	color: rgb(255, 134, 80);
+}
+.s-blue{
+	color: rgb(0, 206, 225);
+}
+.s-yellow{
+	color: rgb(250, 190, 0);
+}
+.s-gray{
+	color: rgb(147, 147, 158);
+}
+.myContent_footer .panel-danger{
+	border-style: none;
+	border-radius: 0px;
+}
+.myContent_footer .panel-heading{
+	background-color: rgb(255, 252, 245);
+
+}
+.myContent_footer p{
+	color: rgb(147, 147, 158);
+	font-size: 12px;
+}
+
+.myContent2{
+	width: 895px;
+	background: white;
+}
+.myContent2 p{
+	padding-left: 30px;
+	color:rgb(96, 96, 108);
+	height: 80px;
+	line-height: 80px;
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+
+.myContent2 .table{
+	width:840px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+.myContent2 .table td{
+	height:60px;
+	vertical-align: middle;
+}
+.myContent2 .table td:first-child{
+	width:180px;
+}
+.myContent2 .table td:last-child{
+	text-align: right;
+	width:300px;
+	color: rgb(198, 198, 206);
+}
+.myContent2 .table input{
+	border-radius: 0px;
+	height: 38px;
+}
+.myContent2 .table input:focus {  
+        outline: none;  
+        border-color: orange;
+        border-radius: 0px;
+        box-shadow: 0 0 5px rgba(225, 134, 80, 0.4); 
+              
+ }  
+
+.default span{
+	background-color: rgb(242, 243, 245);
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(147, 147, 158);
+	float:left;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+
+.strong span{
+	background-color:orange;
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	float:left;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+.medium span{
+	background-color:orange;
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	float:left;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+.medium span:last-child{
+	background-color: rgb(242, 243, 245);
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(147, 147, 158);
+	float:left;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+.enough span:first-child{
+	background-color: orange;
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	float:left;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+
+.myContent2 hr{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.myContent2 label:{
+	background-color: rgb(248, 248, 250);
+    width: 840px;
+    height: 82px;
+    margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 150px;
+}
+.myContent2 .btn-default{
+	width:150px;
+	height: 42px;
+	margin-left: 30%;
+	margin-top: 20px;
+	background-color: rgb(243, 185, 0);
+	color:white;
+	border-style: none;
+	font-size: 16px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	cursor: pointer;
+	line-height: 30px;
+}
+.myContent2 .btn-default:hover{
+	background-color:red ;
+}
+.panel-success .panel-body span{
+	padding-top: 100px;
+	color: green;
+	font-size: 26px;
+	position: relative;
+}
+.panel-success .panel-body span:first-child{
+	padding-left: 360px;
+}
+.myContent_Status .checked{
+	background-color:orange ;
+	color: white;
+}
+.list-group .checked{
+	background-color: #fff8e8;
+    color: #fabe00;
+}

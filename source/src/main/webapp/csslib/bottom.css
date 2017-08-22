@@ -1,0 +1,57 @@
+*{
+	margin: 0px 0px;
+	border: 0px 0px;
+}
+ul li{
+	list-style: none;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+a{
+	text-decoration: none;
+}
+
+
+.bottom{
+	height: 164px;
+	margin-top: 100px;
+	background: #1c1c1c;
+	color: #cecece;
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+	clear: both;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.bottom p{
+	line-height: 22px;
+	font-size: 12px;
+}
+.bottom a{
+	color: #cecece;
+}
+.company{
+	padding-top: 10px;
+	width: 420px;
+	margin: 0 auto;
+}
+.company .c-left{
+	float: left;
+width: 105px;
+height: 42px;
+}
+.company .c-right{
+	float: left;
+padding-left: 20px;
+}
+.c-right span{
+	width: 55px;
+	height: 24px;
+	background: url(../img/iconsprit.png) no-repeat 0 -50px;
+	display: block;
+	margin-top: -4px;
+}

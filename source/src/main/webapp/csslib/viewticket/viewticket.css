@@ -1,0 +1,316 @@
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style-type: none;
+}
+em{
+	font-style: normal;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*图片轮播和简介*/
+.view-briefing{
+	position: relative;
+	margin: 15px auto 0 auto;
+	border: 1px solid #e5e5e5;
+	width: 1198px;
+	height: 386px;
+	color: #333;
+}
+.view-imgs{
+	width:720px;
+	height: 360px;
+	position: absolute;
+	left: 15px;
+	top: -7px;
+	overflow: hidden;
+}
+.view-text{
+	position: absolute;
+	right: 30px;
+	top: 13px;
+	width: 416px;
+	height: 362px;
+	overflow: hidden;
+}
+.text-name{
+	font: normal 28px/56px "Microsoft Yahei",Arial,sans-serif;
+	color: #09f;
+}
+.text-level{
+	color: orange;
+	font-family: "微软雅黑";
+}
+.text-feature{
+	padding-top: 10px;
+	color:#999999;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.text-address{
+	font-size:14px;
+	font-family: "微软雅黑";
+	color:#999999;
+	padding-bottom: 10px;
+}
+.text-address span{
+	color:black;
+}
+.text-openTime{
+	font-size:16px;
+	font-family: "微软雅黑";
+	color:#999999;
+	padding-bottom: 10px;
+}
+.text-startTime,.text-endTime{
+	color:black;
+}
+.text-promise{
+	font-size:16px;
+	font-family: "微软雅黑";
+	color:#999999;
+	padding-bottom: 10px;
+}
+.text-promise-item{
+	background-color: #0099FF;
+	color: white;
+	padding: 2px 5px;
+	font-size: 12px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.item-introduction{
+	position: absolute;
+	border: 1px solid #e5e5e5;
+	width: 300px;
+	font-size: 12px;
+	color: gray;
+	padding: 10px 10px;
+	z-index: 3;
+	background-color: white;
+	display: none;
+}
+.text-price{
+	position: absolute;
+	right: -8px;
+	top: 20px;
+	width: 145px;
+	height: 70px;
+	background: #ff9a00;
+	color: #fff;
+	text-align: left;
+}
+.text-price-head{
+	position: absolute;
+	left: -25px;
+	width:0;
+    height: 0;
+	border-width: 0px 0px 70px 25px;
+	border-style: none solid solid;
+	border-color: transparent transparent  #ff9a00;   
+}
+.price-box{
+	font-size: 16px;
+	padding-top: 15px;
+	padding-left: 25px;
+	margin-bottom: -4px;
+}
+.price-box em{
+	font-size: 30px;
+}
+.price-box span {
+    font-size: 30px;
+    font-family: Arial;
+    margin-left: -5px;
+}
+.text-price-tail{
+	position: absolute;
+
+	right: 0px;
+	top: 70px;
+	width: 0;
+    height: 0;
+    border-top: 10px solid red;
+    border-right: 10px solid transparent;
+}
+/*小导航*/
+.navbar{
+	margin-top:20px ;
+	height: 40px;
+	border: 1px solid #e5e5e5;
+}
+.navbar ul{
+	float: left;
+	margin-top: 4px
+}
+.navbar li{
+	float: left;
+	margin: 0 15px;
+	padding: 0 10px;
+	height: 30px;
+	line-height: 30px;
+	color: #0099FF;
+	cursor: pointer;
+}
+.navbar li.current{
+	color: #fff;
+	background-color: #0099FF;	
+}
+/*选项卡内容*/
+/*门票表格*/
+.piao-list{
+	margin-top: 5px;
+	border: 1px solid #e5e5e5;
+}
+.piao-table{
+	border-collapse: collapse;
+}
+.piao-table td{
+	padding: 8px 0;
+	color: #999;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #dfdfdf;
+}
+.piao-table .td1{
+	width: 60px;
+	color: #0099FF;
+	border-bottom: none;
+	border-right: 1px solid #dfdfdf;
+	text-align: center;
+}
+.piao-table .td2{
+	padding-left: 10px;
+	width: 610px;
+}
+.piao-table .td3{
+	width: 80px;
+}
+.piao-table .td4{
+	width: 140px;
+}
+.piao-table .td5,.piao-table .td6{
+	width: 70px;
+}
+.piao-table .td7{
+	width: 70px;
+}
+.piao-table .td8{
+	width: 100px;
+}
+.piao-table .piao-title{
+	padding-left: 10px;
+	font-size: 14px;
+	overflow: hidden;
+	background-color: white;
+	color: rgb(0, 101, 187);
+}
+.piao-table .piao-type{
+	color:orange;
+	background-color: white;
+}
+.piao-table .piao-time{
+	background-color: white;
+	color: #333333;
+	font-size: 14px;
+	font-family: "arial black";
+}
+.piao-table .piao-delPirce{
+	font-size: 14px;
+	text-decoration: line-through;
+	background-color: white;
+}
+.piao-table .piao-happyPrice{
+	background-color: white;
+	font-size: 14px;
+	color: #ff9a00;
+}
+.piao-table .piao-orderType{
+	background-color: white;
+	color: #333333;
+	font-size: 14px;
+	font-family: "arial black";
+}
+.piao-table .piao-order{
+	background-color: white;
+}
+.piao-order-btn{
+	background-color: #ff8400;
+	display: inline-block;
+	width: 75px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: white;
+}
+.piao-order-btn:hover{
+	background-color: red;
+}
+/*景点简介*/
+.content2{
+	border: 1px solid #e5e5e5;
+}
+.view-feature{
+	position: relative;
+	padding: 41px 48px 25px;
+	border-top: 1px solid #f1f1f1;
+}
+.view-feature ul li{
+	margin-bottom: 10px;
+	padding-left: 65px;
+}
+.view-feature ul li span{
+	float: left;
+	display: inline-block;
+	padding: 2px 8px;
+	margin-left: -65px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ff9913;
+	border-radius: 3px;
+}
+.view-feature ul li p{
+	font-size: 14px;
+	
+}
+.view-info{
+	position: relative;
+	width: 1102px;
+	margin: 0 auto;
+	padding-top: 20px;
+	border-top: 1px dotted #ccc;
+}
+.view-info p{
+	line-height: 30px;
+	font-size: 14px;
+	font-family: 'microsoft yahei',Tahoma,Simsun,sans-serif;
+	color: #333;
+}
+.view-info .view-introduction{
+	padding-bottom: 20px;
+}
+.content3{
+	border: 1px solid #e5e5e5;
+}
+.rule{
+	position: relative;
+	padding: 41px 48px 25px;
+}
+.rule p{
+	line-height: 30px;
+	font-size: 14px;
+	font-family: 'microsoft yahei',Tahoma,Simsun,sans-serif;
+	color: #333;
+	padding-left: 20px;
+}
+.rule span{
+	color: orange;
+}

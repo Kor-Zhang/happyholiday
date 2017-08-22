@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<!-- admins包 -->
+	<package name="adminsPackage" namespace="/" extends="struts-default">
+		<interceptors> 
+			<!-- 字符集拦截器 -->
+			<interceptor name="encodingInterceptor" class="com.happyholiday.interceptor.EncodingInterceptor"/>
+			<!-- 管理员在线状态拦截器 -->
+			<interceptor name="adminOnlineInterceptor" class="com.happyholiday.admin.interceptor.AdminOnlineInterceptor"/>
+			
+			<!-- 配置栈 -->
+			<interceptor-stack name="myDefaultStack">
+				<!--配置内建默认拦截器-->
+				<interceptor-ref name="defaultStack" />
+				<!--配置自定义拦截器-->
+				<!-- 编码拦截器 -->
+				<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+				<!-- 检测管理员是否在线 -->
+				<interceptor-ref name="adminOnlineInterceptor">
+					<!-- 不需要检测是否用户在线的方法 -->
+					<param name="excludeMethods">
+						adminLogin,getTree,
+						adminLogoff,repair*,
+						uploadNewsTextImg,getNewsTextImgByImgName,
+						uploadServiceTextImg,getServiceTextImgByImgName
+					</param>
+				</interceptor-ref>
+				
+				
+			</interceptor-stack>
+		</interceptors>
+		<!-- 全局 
+		<global-results>
+			当返回login视图名时，转入/login.jsp页面
+			<result name="login">/login.jsp</result>
+		</global-results> -->
+		<!-- 全局拦截栈 -->
+		<default-interceptor-ref name="myDefaultStack"></default-interceptor-ref>
+		
+		
+		
+		<!-- 配置首页轮播的action -->
+		<action name="indexCarouselsUploadAction" class="com.happyholiday.admin.action.IndexCarouselsUploadAction" method="carouselsUpload">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+		</action>
+		<!-- 配置添加汽车的action -->
+		<action name="carsUploadAction" class="com.happyholiday.admin.cars.action.CarsUploadAction" method="addCar">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+		</action>
+		<!-- 配置更新汽车图片的的action -->
+		<action name="carImgUploadAction" class="com.happyholiday.admin.cars.action.CarImgUploadAction" method="addCarImg">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+		</action>
+		<!-- 配置上传user头像的action -->
+		<action name="usersUploadHeadAction" class="com.happyholiday.admin.users.action.UsersUploadHeadAction" method="uploadHead">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置上传user的action -->
+		<action name="usersUploadAction" class="com.happyholiday.admin.users.action.UsersUploadAction" method="usersUpload">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置上传官网轮播图片的action -->
+		<action name="owIndexCarouselUploadBackAction" class="com.happyholiday.admin.officialwebsite.action.OwIndexCarouselUploadBackAction" method="uploadIndexCarsoul">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置更新官网轮播图片的action -->
+		<action name="owIndexCarouselUpdateBackAction" class="com.happyholiday.admin.officialwebsite.action.OwIndexCarouselUpdateBackAction" method="updateIndexCarsoul">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置上传主页展示图片的action -->
+		<action name="owIndexDisplayUploadBackAction" class="com.happyholiday.admin.officialwebsite.action.OwIndexDisplayUploadBackAction" method="uploadIndexDisplay">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置更新主页展示图片的action -->
+		<action name="owIndexDisplayUpdateBackAction" class="com.happyholiday.admin.officialwebsite.action.OwIndexDisplayUpdateBackAction" method="updateIndexDisplay">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置上传新闻的action -->
+		<action name="owNewsUploadBackAction" class="com.happyholiday.admin.officialwebsite.action.OwNewsUploadBackAction" method="uploadNews">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置上传业务的action -->
+		<action name="owServiceUploadBackAction" class="com.happyholiday.admin.officialwebsite.action.OwServiceUploadBackAction" method="uploadServiceTextImg">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置上传成员信息的action -->
+		<action name="owMembersUploadBackAction" class="com.happyholiday.admin.officialwebsite.action.OwMembersUploadBackAction" method="uploadMembers">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 配置更新成员信息的action -->
+		<action name="owMembersUpdateBackAction" class="com.happyholiday.admin.officialwebsite.action.OwMembersUpdateBackAction" method="updateMembers">
+			<!-- 动态设置savePath的属性值
+			<param name="savePath">/images</param>
+			<result name="success">/WEB-INF/page/message.jsp</result>
+			<result name="input">/upload/upload.jsp</result> -->
+			<!-- 编码拦截器 -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 检测管理员是否在线拦截器 -->
+			<interceptor-ref name="adminOnlineInterceptor"/>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+			<!-- 定义一个局部一场处理 -->
+			<exception-mapping exception="java.lang.Exception" result="exception"/>
+			<result name="exception" type="chain">erorrsAction!uploadError</result>
+			
+		</action>
+		<!-- 异常处理接口 -->
+		<action name="erorrsAction!*" method="{1}" class="com.happyholiday.admin.action.ErorrsAction">
+			
+		</action>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- viewticket后台模块 -->
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--配置添加景区的 Action  -->
+		<action name="viewsUploadAction" class="com.happyholiday.admin.viewstickets.action.ViewsUploadAction" method="addView">
+			<!--编码拦截器  -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!--添加景区图片的 Action-->
+		<action name="viewImgUploadAction" class="com.happyholiday.admin.viewstickets.action.ViewImgUploadAction" method="addViewImg">
+			<!--编码拦截器  -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+		<!-- 添加景区轮播图片的action  -->
+		<action name="viewCarouselUploadAction" class="com.happyholiday.admin.viewstickets.action.ViewCarouselUploadAction" method="addCarousel">
+			<!--编码拦截器  -->
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			<!-- 上传 -->
+			<interceptor-ref name="fileUpload">
+				<!-- 文件过滤 -->
+				<param name="allowedTypes">image/bmp,image/png,image/gif,image/jpeg</param>
+				<!-- 文件大小, 以字节为单位 -->
+				<param name="maximumSize">1025956</param>
+			</interceptor-ref>
+			<!-- 默认拦截器必须放在fileUpload之后，否则无效 -->
+			<interceptor-ref name="defaultStack" />
+		</action>
+	</package>
+</struts>

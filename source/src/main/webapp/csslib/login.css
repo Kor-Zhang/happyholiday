@@ -1,0 +1,98 @@
+/*鍒濆鍖栨牱寮�/
+*{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-family: "寰蒋闆呴粦";
+	font-size: 14px;
+}
+/*鑳屾櫙棰滆壊*/
+body{
+	background-color:white;
+}
+a:hover{
+	text-decoration: none;
+}
+/*椤堕儴杈规*/
+.banner{
+	width: auto;
+	height: 60px;
+	margin-bottom: 20px;
+}
+.banner .logo{
+	font-size: 20px;
+	color:rgb(37, 119, 227);
+	line-height: 60px;
+}
+.banner .login-index{
+	float: right;
+}
+.container{
+	width: 850px;
+	padding: 0px 0px;
+}
+
+/*琛ㄥ崟鏍峰紡淇敼*/
+.panel-primary{
+	border-radius: 0px;
+}
+.panel{
+	border: 1px solid #afd0f1;
+	margin-top:50px;
+}
+#frmLogin .input-group{
+	margin-top: 20px;
+	width: 300px;
+	margin-left: 50px;
+}
+
+#frmLogin div{
+	font-family: "寰蒋闆呴粦";
+	
+}
+
+#frmLogin .input-group-addon{
+	background-color: white;
+	border-radius: 0px;
+}
+
+#frmLogin .form-control{
+	border-radius: 0px;
+}
+
+#frmLogin .checkbox{
+	float:left;
+}
+#frmLogin .input-group a{
+  float: right;
+  padding-top: 10px;
+}
+
+#frmLogin .btn-login{
+	width:300px;
+	background-color:orange ;
+	height: 50px;
+	font-family: "寰蒋闆呴粦";
+	font-size: 14px;
+	color: white;
+	margin-bottom: 50px;
+}
+
+#frmLogin .word{
+	width:150px
+}
+#frmLogin .btn-word{
+	margin-left: 10px;
+	padding:6px 0px;
+	border-color: orange;
+	color:orange;
+	background: white;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;          
+}
+

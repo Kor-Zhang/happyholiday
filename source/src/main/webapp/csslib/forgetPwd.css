@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: microsoft yahei;
+    font-size:14px;
+}
+body{
+	background-color: rgb(242, 243, 245);
+}
+ul{
+	list-style: none;
+}
+p{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+/*top 开始--------------------------*/
+.top{
+    width:auto;
+    min-width: 1200px;
+    background: #d1d1d1;
+    height:30px;
+}
+.top .top-content{
+    margin:0 auto;
+    width:1200px;
+}
+.top .top-content span{
+    line-height: 30px;
+    margin-right: 5px;
+}
+.top .top-content span:hover{
+    color:#f40;
+    cursor: pointer;
+}
+.top .top-content .top-content-left{
+    float:left;
+}
+.top .top-content .top-content-left .login-register a:hover{
+    color:#f40;
+    cursor: pointer;
+}
+.top .top-content .top-content-left .tip{
+    color: #aaa;
+}
+.top .top-content .top-content-right{
+    float:right;
+}
+/*top 结束----------------------------*/
+/*logo-search start------*/
+.logo-serach{
+	height: 105px;
+ 	width:auto;
+}
+.logo-serach-contents{
+	width:1200px;
+    margin:0 auto;
+}
+.logo{
+	color:rgb(37, 119, 227);
+	font-family: "微软雅黑";
+	font-size: 28px;
+	line-height: 105px;
+	width: 400px;
+	float: left;
+}
+.serach{
+	width:400px;
+	float: left;
+	padding-top: 40px;
+}
+.serach .input-group{
+	border: 2px solid  rgb(37, 119, 227);
+}
+.serach .form-control{
+	border-color: rgb(37, 119, 227);
+	border-radius: 0px;
+}
+.serach  .input-group-addon{
+	background-color: rgb(37, 119, 227);
+	border-style: none;
+	border-radius: 0px;
+}
+.serach .input-group-addon:hover{
+	 background-color: rgb(10, 86, 187);
+	    cursor:pointer;
+}
+.serach .input-group-addon a:focus{
+	text-decoration: none;
+}
+.input-group-addon a{
+	color:white;
+}
+.phone{
+	height: 105px;
+	width:400px;
+   	padding-top: 40px;
+   	padding-left:50px ;
+    float: right;
+}
+.phone .phone-span2{
+	font-family: "微软雅黑";
+	font-size:26px;
+    color:#c00;
+}
+/**logo-search end******/
+/**nav start**********/
+.banner{
+	background-color: rgb(37, 119, 227);
+	margin-bottom: 20px;
+	height: 50px;
+	width:auto;
+	min-width: 1200px;
+}
+.banner ul>li{
+	list-style: none;
+	float: left;
+	color: white;
+	height: 50px;
+	width: 62px;
+	line-height: 50px;
+	text-align: center;
+}
+.banner ul>li:first-child{
+	font-size: 20px;
+	width: auto;
+	margin-right: 50px;
+	font-family:simhei;
+}
+.banner ul>li:hover{
+	background-color: rgb(10, 86, 187);
+}
+.banner li>a:hover{
+	text-decoration: none;
+}
+.banner li>a{
+	color:white;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+/**内容开始***/
+.container{
+	width: 1200px;
+	padding: 0px 0px;
+}
+#frmPwd{
+	padding-top: 50px;
+}
+#frmPwd .form-group{
+ 	width:650px;
+	margin:0 auto;
+}
+#frmPwd .input-group{
+	width:400px;
+	margin:0 auto;
+	float: left;
+	margin-bottom: 20PX;
+}
+#frmPwd .input-group-addon{
+	background-color: white;
+	border-radius: 0px;
+}
+#frmPwd .form-group .Tip{
+	width: 250px;
+	color:red;
+	float: right;
+	padding-top:6px ;
+	padding-left: 5px;
+	height:34px ;
+}
+#frmPwd .form-control{
+	border-radius: 0px;
+}
+#frmPwd .word{
+	width:250px;
+}
+
+#frmPwd .btn-submit{
+	width:70px;
+	background-color:orange ;
+	height: 50px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: white;
+	margin-bottom: 50px;
+}
+#frmPwd .btn-word{
+	margin-left: 10px;
+	padding:6px 0px;
+	border-color: orange;
+	color:orange;
+	background: white;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;          
+}
+
+
+.default span{
+	background-color: rgb(242, 243, 245);
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(147, 147, 158);
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+
+.strong span{
+	background-color:orange;
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+.medium span{
+	background-color:orange;
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+.medium span:last-child{
+	background-color: rgb(242, 243, 245);
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: rgb(147, 147, 158);
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}
+.enough span:first-child{
+	background-color: orange;
+	border-color: rgb(233, 235, 238);
+	border-style: solid;
+	border-width: 1px;
+	color: white;
+	float:left;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	width: 54px;font-weight: 400;
+}

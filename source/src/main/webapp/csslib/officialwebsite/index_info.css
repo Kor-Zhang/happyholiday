@@ -1,0 +1,44 @@
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: black;
+	font-family: "Microsoft YaHei";
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+/************************展示信息***********************/
+#officialwebsite_index_info_body {
+	text-align:center;
+	padding: 100px 0px;
+	
+}
+#officialwebsite_index_info_body{
+	text-align:center;;
+	padding: 50px 0px;
+	
+}
+#officialwebsite_index_info_body_word>*{
+	margin-top: 35px;
+}
+
+#officialwebsite_index_info_body_imgTable{
+	margin-top: 45px;
+	width:100%;
+}
+#officialwebsite_index_info_body_imgTable>tr>td{
+	width:25%;
+}
+#officialwebsite_index_info_body_imgTable img{
+	width:100%;
+	height:100%;
+}
+#officialwebsite_index_info_body_imgTable div{
+	height:100px;
+	overflow:auto;
+	background: rgb(105,168,215);
+}

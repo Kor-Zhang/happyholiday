@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- officialwebsite包 -->
+	<package name="officialWebsitePackage" namespace="/" extends="struts-default">
+		<interceptors> 
+			<!-- 字符集拦截器 -->
+			<interceptor name="encodingInterceptor" class="com.happyholiday.interceptor.EncodingInterceptor"/>
+			
+			<!-- 配置栈 -->
+			<interceptor-stack name="myDefaultStack">
+				<!--配置内建默认拦截器-->
+				<interceptor-ref name="defaultStack" />
+				<!--配置自定义拦截器-->
+				<!-- 编码拦截器 -->
+				<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+				
+				
+			</interceptor-stack>
+		</interceptors>
+		<!-- 全局拦截栈 -->
+		<default-interceptor-ref name="myDefaultStack"></default-interceptor-ref>
+	</package>
+</struts>

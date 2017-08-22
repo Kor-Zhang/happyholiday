@@ -1,0 +1,184 @@
+@CHARSET "UTF-8";
+html, body, div, dl, dt, dd, ul, ol, li, 
+h1, h2, h3, h4, h5, h6, pre, code, form, 
+fieldset, legend, input, textarea, p, blockquote, 
+th, td, em, button, input , i {
+    margin: 0;
+    padding: 0;
+}
+ul, ol {
+    list-style: none;
+}
+.clear {
+    clear: both;
+}
+
+
+.switch {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.switch-on {
+	background: url(http://image.zuchecdn.com/newversion/news/common/icon.png) no-repeat;
+	background-position: -175px -100px;
+}
+
+.switch-off {
+	background: url(http://image.zuchecdn.com/newversion/news/common/icon.png) no-repeat;
+	background-position: -228px -100px;
+}
+
+.search-button {
+    display: block;
+    border-radius: 3px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 164px;
+    background-color: #fabe00;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.search-button:hover {
+    background-color: #ff8650;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+/**鐑棬杞﹁溅*/
+.car-remen {
+    border: 1px solid #ff8650;
+    color: #ff8650;
+}
+/**鏂拌溅鍨�/
+.car-xin {
+    border: 1px solid #2b99ff;
+    color: #2b99ff;
+}
+
+.floatleft {
+	float: left;
+}
+/**棰勮鎸夐挳*/
+.order-button {
+	background-color: #fabe00;
+}
+.order-button {
+    float: right;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.order-button:hover {
+	text-decoration: none;
+	background-color: #ff8650;
+	color: white;
+}
+
+.borderbottomDBE4EB {
+	border-bottom: 1px solid #DBE4EB;
+}
+.borderbottomdashedDBE4EB {
+	border-bottom: 1px dashed #DBE4EB;
+}
+.rebwrong_icon {
+    background-position: -100px -102px;
+    padding-left: 23px;
+    line-height: 22px;
+    background-image: url(../../img/car/myszicon.png);
+    background-repeat: no-repeat;
+}
+.mt8 {
+	margin-top: 8px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.radioItem {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background:url(../../img/car/order.png) no-repeat;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.icon-tip {
+	text-decoration: none;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../../img/car/order.png) no-repeat -45px -43px;
+}
+.icon-up {
+	width: 12px;
+	height: 8px;
+	background: url(../../img/car/order.png) no-repeat -63px -196px;
+	overflow: hidden;
+	display: inline-block;
+	left: 83px;
+	top: 36px;
+	cursor: pointer;
+}
+.icon-down {
+    width: 12px;
+    height: 8px;
+    background: url(../../img/car/order.png) no-repeat -23px -47px;
+    overflow: hidden;
+    display: inline-block;
+    left: 83px;
+    top: 36px;
+    cursor: pointer;
+}
+.fee-line50 {
+    height: 50px;
+    padding: 0 10px;
+    overflow: hidden;
+    zoom: 1;
+    display: none;
+}
+.button-blue {
+	width: 104px;
+	height: 44px;
+	display: inline-block;
+	background: url(../../img/car/bgbtns.png);
+	background-position: -84px 0;
+	font: 700 16px/44px "寰蒋闆呴粦";.
+	color: #fff;
+	cursor: pointer;
+}
+.orange {
+	color: #F60;
+}
+.gray {
+	color: gray;
+}
+.bold {
+	font-weight: bold;
+}
+.f14 {
+	font-size: 14;
+}
+.m20_0 {
+	margin: 20px 0px;
+}
+.p20 {
+	padding: 20px;
+}

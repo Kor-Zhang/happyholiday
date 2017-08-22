@@ -1,0 +1,256 @@
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style-type: none;
+}
+em{
+	font-style: normal;
+}
+
+.container{
+	width: 980px;
+	margin: 0 auto;
+}
+/*页头样式*/
+.head{
+	width: 100%;
+    height: 59px;
+    font: 12px/1.5 Arial,tahoma,verdana,"Microsoft YaHei",Simsun,sans-serif;
+    float: left;
+}
+.logo{
+	width: 126px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /*字体样式*/
+   font-size: 20px;
+   color: #0099FF;
+   float: left;
+}
+.personal{
+	position: relative;
+	float: right;
+	padding-top: 15px;
+    padding-bottom: 8px;
+    padding-right: 50px;
+	
+}
+/*进度条*/
+.process-bar{
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+}
+.process-bar ul li{
+	width: 326px;
+	float: left;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #969a9d;
+    background-color: #e7e8e9;
+}
+.process-bar ul .step-1 {
+    background-color: #fe9c00;
+    color: #f5f8fa;
+}
+.process-bar ul li span {
+    font-family: Times Roman;
+    font-size: 20px;
+}
+.process-bar ul li i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 40px;
+    background-image: url(../../img/viewticket/ticket_order.png);
+    background-repeat: no-repeat;
+    background-position: -76px -85px;
+}
+.process-bar ul .step-1 i {
+    background-position: -76px 0;
+}
+/*预定信息*/
+.ticket-info{
+  	border: 1px solid #e9e9e9;
+    border-top-width: 2px;
+    margin-top: 50px;
+}
+.ticket-title{
+	padding: 9px 19px;
+    background: #eef8ff;
+}
+.ticket-title .ticket-name{
+	margin-bottom: 5px;
+    padding: 6px 0;
+    font: 22px/30px "Microsoft Yahei",Arial,sans-serif;
+}
+.ticket-table{
+	 background: #fff;
+}
+.mytable{
+	width: 100%;
+}
+.mytable th{
+	border-bottom: 3px solid #dff1ff;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 10px;
+}
+.mytable td{
+	padding: 10px;
+    vertical-align: top;
+    line-height: 21px;
+}
+.mytable p{
+	color: gray;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.mytable .ticket-time{
+	position: relative;
+	z-index: 0;
+}
+.mytable .ticket-time input{
+	width: 140px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: top;
+    padding: 3px 6px;
+    border: 1px solid #bcbcbc;
+    font: 14px/20px Arial,sans-serif;
+    background: #fff;
+    z-index: 2;
+}
+.mytable .time-icon{
+	background-image: url(../../img/viewticket/icon.png);
+	position: absolute;
+	right: 93px;
+	top: 8px;
+    width: 25px;
+    height: 16px;
+    z-index: 1;
+    cursor: pointer;
+}
+.mytable .num-box{
+	height: 30px;
+	overflow: hidden;
+    border: 1px solid #099fde;
+    height: 28px;
+    display: inline-block;
+}
+.mytable .num-box i{
+	background-image: url(../../img/viewticket/ticket_order.png);
+    background-repeat: no-repeat;
+	display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: top;
+}
+ 
+.mytable .num-box .num-cut{
+	background-color: #099fde;
+    background-position: -44px -18px;
+}
+.mytable .num-box .num-add{
+	background-color: #099fde;
+    background-position: -21px 4px;
+}
+.mytable .num-box .disabled{
+	background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+.mytable .num-box .num-cut.disabled{
+	 background-position: -44px 4px;
+}
+.mytable .num-box .num-add.disabled{
+	background-position: 6px -43px;
+}
+.mytable .num-box .num-input{
+	width: 32px;
+    heigth:30px;
+    border: 0;
+    font: inherit;
+    text-align: center;
+}
+.mytable em,.mytable strong{
+	font-family: tahoma,arial,sans-serif;
+	color: #f70;
+}
+/*取票人信息*/
+.getTicket{
+	border: 1px solid #e9e9e9;
+    border-top-width: 2px;
+    margin-top: 50px;
+}
+.getTicket .title{
+	padding: 9px 19px;
+    background: #eef8ff;
+}
+.getTicket .title h3{
+	margin-bottom: 5px;
+    padding: 6px 0;
+    font: 22px/30px "Microsoft Yahei",Arial,sans-serif;
+    display: inline-block;
+}
+.getTicket .title span{
+	margin-bottom: 5px;
+    padding: 6px 16px;
+ 	font-size: 14px;
+ 	color: gray;
+    display: inline-block;
+}
+
+.mytable  input{
+	width: 130px;
+    height: 30px;
+    vertical-align: top;
+    padding: 3px 6px;
+    border: 1px solid #bcbcbc;
+    font: 12px/20px Arial,sans-serif;
+    background: #fff;
+    z-index: 2;
+}
+.getTicket .mytable tbody tr{
+	height: 74px;
+}
+/*去支付*/
+.pay{
+	margin-top:20px ;
+	padding-bottom: 20px;
+}
+.pay .agree-info{
+	font-size: 14px;
+	color: gray;
+}
+.pay .agree-info input{
+	margin-right: 5px;
+	padding-top: 3px;
+}
+.pay .pay-btn{
+	text-align: right;
+	padding-right: 100px;
+	height:40px ;
+}
+.pay .pay-btn a{
+	display: inline-block;
+	background-color: orange;
+	color: white;
+	height:40px ;
+	line-height: 40px;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+.pay .pay-btn a:hover{
+	background-color:red;
+}

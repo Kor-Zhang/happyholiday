@@ -1,0 +1,77 @@
+
+* {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	color: black;
+	font-family: "Microsoft YaHei";
+	margin:0px 0px;
+	padding: 0px 0px;
+}
+html,body{
+	width:100%;
+	height:100%;
+	overflow-x:hidden; 
+}
+
+/***********************************导航栏********************************/
+#officialwebsite_members_nav{
+	
+	height:100px;
+	width:100%;
+}
+/***********************************介绍信息展示********************************/
+
+#officialwebsite_members_introduction{
+	margin-top:100px;
+	margin-left:10%;
+	width:80%;
+	margin-top: 50px;
+}
+#officialwebsite_members_introduction_font>h1{
+	
+	margin-bottom: 25px;
+	color:rgb(86,180,226);
+}
+#officialwebsite_members_introduction_imgDiv{
+	height:100%;
+	width:100%;
+	margin-top: 20px;
+}
+#officialwebsite_members_introduction_imgDiv_table{
+	width:100%;
+	height:100%;
+}
+#officialwebsite_members_introduction_imgDiv_table td{
+	width:50%;
+	height:100%;
+}
+#officialwebsite_members_introduction_imgDiv_table tr{
+}
+.officialwebsite_members_introduction_imgDiv_table_img>div{
+	height:100%;
+	float: left;
+}
+.officialwebsite_members_introduction_imgDiv_table_img_img{
+	height:100%;
+	width:40%;
+}
+.officialwebsite_members_introduction_imgDiv_table_img_img>img{
+	width:100%;
+	height:100%;
+}
+.officialwebsite_members_introduction_imgDiv_table_img_fontDiv{
+	margin:auto auto;
+	text-align:center;
+	width:60%;
+	height:100%;
+	background: rgb(226,235,242);
+	line-height: 50px;
+	overflow: auto;
+}
+.officialwebsite_members_introduction_imgDiv_table_img_fontDiv>h5{
+	line-height: 25px;
+}
+/*********************************底部********************************/
+#officialwebsite_members_bottom{
+	margin-top: 45px;	
+}

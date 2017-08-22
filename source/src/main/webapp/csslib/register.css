@@ -1,0 +1,104 @@
+/*鍒濆鍖栨牱寮�/
+*{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	font-family: "寰蒋闆呴粦";
+	font-size: 14px;
+}
+/*鑳屾櫙棰滆壊*/
+body{
+	background-color:#FFFFFF;
+}
+/*椤堕儴杈规*/
+.banner{
+	width: 100%;
+	height: 60px;
+	margin-bottom: 20px;
+	width:auto;
+	min-width: 1200px;
+}
+.banner .logo{
+	font-size: 20px;
+	color:rgb(37, 119, 227);
+	line-height: 60px;
+}
+.banner .register-login{
+	float: right;
+}
+.container{
+	width: 850px;
+	padding: 0px 0px;
+}
+/*淇敼琛ㄥ崟鏍峰紡*/
+#frmRegister{
+	border: 1px solid #afd0f1;
+}
+#frmRegister p{
+	color:rgb(37, 119, 227);
+	margin:20px 0px ;
+	font-size: 24px;
+	font-family: "寰蒋闆呴粦";
+	
+}
+#frmRegister .form-group{
+ 	width:650px;
+	margin:0 auto;
+}
+#frmRegister .input-group{
+	width:400px;
+	margin:0 auto;
+	float: left;
+	margin-bottom: 20PX;
+}
+#frmRegister .input-group-addon{
+	background-color: white;
+	border-radius: 0px;
+}
+#frmRegister .form-group .Tip{
+	width: 250px;
+	color:red;
+	float: right;
+	padding-top:6px ;
+	padding-left: 5px;
+	height:34px ;
+}
+#frmRegister .form-group .Tip2{
+	width: 250px;
+	color:red;
+	float: right;
+	padding-top:6px ;
+	padding-left: 5px;
+	height:34px ;
+}
+#frmRegister .form-control{
+	
+	border-radius: 0px;
+}
+#frmRegister .word{
+	width:250px;
+}
+
+#frmRegister .btn-register{
+	width:400px;
+	background-color:orange ;
+	height: 50px;
+	font-family: "寰蒋闆呴粦";
+	font-size: 14px;
+	color: white;
+	margin-bottom: 50px;
+}
+#frmRegister .btn-word{
+	margin-left: 10px;
+	padding:6px 0px;
+	border-color: orange;
+	color:orange;
+	background: white;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none;          
+}

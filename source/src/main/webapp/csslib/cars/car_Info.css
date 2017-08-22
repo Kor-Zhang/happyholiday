@@ -1,0 +1,483 @@
+.clear{clear:both; height: 0; line-height: 0; font-size: 0}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style-type: none;
+}
+em{
+	font-style: normal;
+}
+.container2{
+	width: 1028px;
+	margin: 0 auto;
+}
+
+/*标题设计*/
+.car-title{
+	width: 1018px;
+	border: solid 1px #dbe4eb;
+	height: 40px;
+	font-family: "微软雅黑";
+	line-height: 40px;
+	color: #999999;
+	padding-left: 10px;
+	background: #f3f3f3;
+}
+/*图片轮播和简介*/
+.car-briefing{
+	position: relative;
+	/*margin: 15px auto 0 auto;*/
+	border-right: 1px solid #dbe4eb;
+	border-left: 1px solid #dbe4eb;
+	width: 1028px;
+	height: 266px;
+	color: #333;
+	background: #f9fdff;
+}
+.car-imgs{
+	width:620px;
+	height: 360px;
+	position: absolute;
+	left: 15px;
+	top: -7px;
+	overflow: hidden;
+}
+.car-text{
+	position: absolute;
+	right: 30px;
+	top: 13px;
+	width: 316px;
+	height: 362px;
+	overflow: hidden;
+}
+.text-name{
+	font: normal 28px/56px "Microsoft Yahei",Arial,sans-serif;
+	color: #09f;
+	padding-top: 25px;
+	
+}
+.text-level{
+	color: orange;
+	font-family: "微软雅黑";
+}
+.text-feature{
+	padding-top: 10px;
+	color:#999999;
+	padding-bottom: 10px;
+	overflow: hidden;
+	width: 300px;
+	height: 22px;
+}
+.text-address{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #999999;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+.text-address span{
+	color:black;
+}
+.text-openTime{
+	font-size:16px;
+	font-family: "微软雅黑";
+	color:#999999;
+	padding-bottom: 10px;
+}
+.text-startTime,.text-endTime{
+	color:black;
+}
+.text-promise{
+	font-size:16px;
+	font-family: "微软雅黑";
+	color:#999999;
+	padding-bottom: 10px;
+}
+.text-promise-item{
+	background-color: #0099FF;
+	color: white;
+	padding: 2px 5px;
+	font-size: 12px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.item-introduction{
+	position: absolute;
+	border: 1px solid #e5e5e5;
+	width: 300px;
+	font-size: 12px;
+	color: gray;
+	padding: 10px 10px;
+	z-index: 3;
+	background-color: white;
+	display: none;
+}
+.text-price{
+	position: absolute;
+	right: -8px;
+	top: 30px;
+	width: 145px;
+	height: 70px;
+	background: #ff9a00;
+	color: #fff;
+	text-align: left;
+}
+.text-price-head{
+	position: absolute;
+	left: -25px;
+	width:0;
+    height: 0;
+	border-width: 0px 0px 70px 25px;
+	border-style: none solid solid;
+	border-color: transparent transparent  #ff9a00;   
+}
+.price-box{
+	font-size: 16px;
+	padding-top: 15px;
+	padding-left: 25px;
+	margin-bottom: -4px;
+}
+.price-box em{
+	font-size: 30px;
+}
+.price-box span {
+    font-size: 30px;
+    font-family: Arial;
+    margin-left: -5px;
+}
+.text-price-tail{
+	position: absolute;
+
+	right: 0px;
+	top: 70px;
+	width: 0;
+    height: 0;
+    border-top: 10px solid red;
+    border-right: 10px solid transparent;
+}
+/*详细信息*/
+.order-car{
+	height: 200px;
+	border-right: 1px solid #dbe4eb;
+	border-left: 1px solid #dbe4eb;
+	border-bottom: 1px solid #dbe4eb;
+	background: #f9fdff;
+}
+.order-car-info li{
+	width: 210px;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px dashed #dbe4eb;
+	float: left;
+	color: #333;
+	font-family: "微软雅黑";
+	padding-left: 40px;
+	font-size: 14px;
+}
+.order-car-info li.nonebd{
+	border:0;
+}
+.order-car-info b{
+	display: inline-block;
+	width: 20px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.pp, .cx, .ndk, .pzk, .zws, .cms, .rllx, .bsxlx, .pl, .rybh, .qdfs, .fdjjqxs, .pfbz, .tc, .yxrl, .yx, .zy, .tc, .qin, .dvd, .gps {
+    background-image: url(../../img/car/orderCarInforbg.png);
+    background-repeat: no-repeat;
+}
+.pp {
+    height: 18px;
+    background-position: 0 0;
+}
+.cx {
+    height: 13px;
+    background-position: 0 -22px;
+}
+.ndk {
+    height: 17px;
+    background-position: 0 -40px;
+}
+.pzk {
+    height: 16px;
+    background-position: 0 -62px;
+}
+.zws {
+    height: 18px;
+    background-position: 0 -83px;
+}
+.cms {
+    height: 18px;
+    background-position: 0 -107px;
+}
+.rllx {
+    height: 16px;
+    background-position: 0 -131px;
+}
+.bsxlx {
+    height: 18px;
+    background-position: 0 -152px;
+}
+.pl {
+    height: 11px;
+    background-position: 0 -175px;
+}
+.rybh {
+    height: 18px;
+    background-position: 0 -190px;
+}
+.qdfs {
+    height: 16px;
+    background-position: 0 -213px;
+}
+.fdjjqxs {
+    height: 15px;
+    background-position: 0 -233px;
+}
+.tc {
+    height: 18px;
+    background-position: 0 -350px;
+}
+.yxrl {
+    height: 19px;
+    background-position: 0 -288px;
+}
+.yx {
+    height: 15px;
+    background-position: 0 -309px;
+}
+.zy {
+    height: 16px;
+    background-position: 0 -329px;
+}
+.tc {
+    height: 18px;
+    background-position: 0 -350px;
+}
+.qin {
+    height: 17px;
+    background-position: 0 -373px;
+}
+.dvd {
+    height: 17px;
+    background-position: 0 -395px;
+}
+.gps {
+    height: 19px;
+    background-position: 0 -416px;
+}
+/*填写订单信息*/
+.car-order-info{
+	border-right: 1px solid #dbe4eb;
+	border-left: 1px solid #dbe4eb;
+	border-bottom: 1px solid #dbe4eb;
+}
+.mytable{
+	width: 100%;
+}
+.mytable th{
+	border-bottom: 3px solid #dff1ff;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: left;
+    text-indent: 10px;
+}
+.mytable td{
+	border-bottom: 3px solid #dff1ff;
+	padding: 10px;
+    vertical-align: top;
+    line-height: 21px;
+}
+.mytable p{
+	color: gray;
+	font-size: 14px;
+	padding-top: 5px;
+}
+.mytable .order-time{
+	position: relative;
+	z-index: 0;
+}
+.mytable .order-time input{
+	width: 144px;
+	height: 25px;
+    margin-right: 10px;
+    vertical-align: top;
+    padding: 3px 6px;
+    border: 1px solid #bcbcbc;
+    font: 12px/20px Arial,sans-serif;
+    background: #fff;
+    z-index: 2;
+}
+.mytable .time-icon{
+	background-image: url(../../img/viewticket/icon.png);
+	position: absolute;
+	right: 87px;
+	top: 5px;
+    width: 25px;
+    height: 16px;
+    z-index: 1;
+}
+.mytable em,.mytable strong{
+	font-family: tahoma,arial,sans-serif;
+	color: #f70;
+}
+.mytable  input{
+	width: 144px;
+	height: 25px;
+    vertical-align: top;
+    padding: 3px 6px;
+    border: 1px solid #bcbcbc;
+    font: 12px/20px Arial,sans-serif;
+    background: #fff;
+    z-index: 2;
+}
+.getCarMan{
+	border-right: 1px solid #dbe4eb;
+	border-left: 1px solid #dbe4eb;
+	border-bottom: 1px solid #dbe4eb;
+}
+.getCarMan .mytable tbody tr{
+	height: 74px;
+}
+.getCarMan .mytable td{
+	border-bottom: none;
+}
+/*费用明细**/
+
+.fee-item {
+    height: 74px;
+    padding: 0 10px;
+    zoom: 1;
+}
+.fee-item .fee-price {
+	float: right;
+	margin-top: 27px;
+}
+.fee-item .calculate {
+	float: right;
+	margin-top: 33px;
+}
+.fee-item .fee-name {
+	padding: 0 10px;
+	line-height: 20px;
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	color: #333;
+	margin-top: 30px;
+}
+.price-gray-small {
+    display: inline-block;
+    overflow: hidden;
+    zoom: 1;
+}
+.price-gray-small em.num {
+    display: inline-block;
+    font: 13px/13px arial;
+    color: #848484;
+    float: left;
+    margin-right: 2px;
+}
+.price-gray-small em.unit {
+    height: 13px;
+    display: inline-block;
+    font: 12px/13px "宋体";
+    color: #848484;
+    float: left;
+    padding-right: 5px;
+}
+.orderp-orangeM {
+	display: inline-block;
+	overflow: hidden;
+	zoom: 1;
+}
+.orderp-orangeM em.rmb {
+    width: 10px;
+    height: 13px;
+    display: inline-block;
+    font: 700 16px/16px "微软雅黑";
+    color: #f60;
+    float: left;
+    margin: 5px 5px 0 0;
+    margin-right: -1px;
+}
+.orderp-orangeM em.num {
+    display: inline-block;
+    font: 700 24px/24px arial;
+    color: #f60;
+    float: left;
+    margin-right: 2px;
+}
+.order-fee-total {
+    padding: 22px 10px;
+    text-align: right;
+    position: relative;
+    background: #fff;
+}
+.order-fee-total .order-total {
+    font-size: 15px;
+    font-weight: 700;
+    color: #848484;
+    display: inline-block;
+}
+.order-fee-total em.rmb {
+    width: 10px;
+    height: 13px;
+    display: inline-block;
+    font: 700 16px/16px "微软雅黑";
+    color: #f60;
+    margin: 11px 5px 0 0;
+    margin-right: -1px;
+}
+.order-fee-total em.num {
+    display: inline-block;
+    font: 700 36px/32px arial;
+    color: #f60;
+    margin-right: 2px;
+}
+
+.fee-item .fee-name em {
+    color: #848484;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+.fee-item .fee-name .icon-tip {
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+}
+.float-box {
+    padding: 3px 5px 3px 10px;
+    background: #fdfcfa;
+    border: solid 1px #ed5565;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: absolute;
+    z-index: 9999;
+    line-height: 20px;
+}
+.fee-item .fee-name .icon-tip .float-box {
+    width: 338px;
+    color: #ed5565;
+    top: -10px;
+    left: 23px;
+    background: #fdfcfa;
+}
+.fee-item .fee-name .icon-tip .float-box p {
+    text-indent: 2em;
+    font-weight: 400;
+    font-size: 12px;
+    color: #333;
+}

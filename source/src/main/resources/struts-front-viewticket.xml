@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" 
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- viewstickets包 -->
+	<package name="viewsTicketsPackage" namespace="/" extends="struts-default">
+		<interceptors> 
+			<!-- 字符集拦截器 -->
+			<interceptor name="encodingInterceptor" class="com.happyholiday.interceptor.EncodingInterceptor"/>
+			<!-- 配置栈 -->
+			<interceptor-stack name="myDefaultStack">
+				<!--配置内建默认拦截器-->
+				<interceptor-ref name="defaultStack" />
+				<!--配置自定义拦截器-->
+				<!-- 编码拦截器 -->
+				<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<!-- 全局默认拦截栈 -->
+		<!-- 此默认interceptor是针对所有action的 -->
+		<!-- 如果某个action中引入了interceptor, 则在这个action中此默认interceptor就会失效 --> 
+		<default-interceptor-ref name="myDefaultStack"></default-interceptor-ref>
+	
+		
+	</package>
+	
+</struts>
